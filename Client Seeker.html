@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>Client Seeking - PalService</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheltering Form Page - Pet Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: brown;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(237, 237, 155); 
+        }
+        section {
+            max-width: 400px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 247, 243, 0.1);
+            border-radius: 8px;
+            justify-content:center;
+        }
+        h2 {
+            color: brown;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5em;
+        }
+        input {
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+        a {
+            background-color: brown;
+            color: #fff;
+            padding: 0.5em;
+            cursor: pointer;
+            border: 2px solid rgb(237, 237, 155);
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        input[id="username"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid brown;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            border-radius: 5px;
+        }
+        input[id="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid brown;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            border-radius: 5px;
+        }
+        input[id="username"]:focus {
+            border: 2px solid rgb(7, 91, 202);
+        }
+        input[id="email"]:focus {
+            border: 2px solid rgb(7, 91, 202);
+        }
+        header {
+            background-color: brown;
+            color: #fff;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+        .back-button {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: rgb(237, 237, 155);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        text-decoration:none;
+    }
+    .back-button :hover{
+        transform: scale(1.1);
+        background-color: #ffffff;
+        color: coral;
+        cursor:pointer;
+    }
+    header {
+        background-color: brown;
+        color: #fff;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="palserve.png" alt="">
+    </header>
+    <a href="Services Page.html" class="back-button">Go Back</a>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/register" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Contact Number:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+                        
+            <label for="email">Services You Can Provide:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <a href="CS Page.html" class="btn">Get A Client</a>
+        </form>
+    </section>
+
+</body>
+
+</html>
